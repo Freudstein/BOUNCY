@@ -1,4 +1,4 @@
-@mixin font($fz: 14px, $lh: 25px, $color: "#81868", $tt: none){
+@mixin font($fz: 14px, $lh: 25px, $color: #81868e, $tt: none){
 	font-size: $fz;
 	line-height: $lh;
 	color: $color;
