@@ -102,6 +102,16 @@ body{
 	}
 }
 
+/* slider common styles */
+
+.slick-list{
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+}
+
 /* ====== HEADER ====== */
 
 .header{
@@ -461,7 +471,9 @@ body{
 /* ====== PORTFOLIO ====== */
 
 .portfolio{
-	padding-top: 75px;
+	padding: 75px 0 100px;
+
+	background-color: #f3f3f3;
 }
 
 .portfolio__subtext{
@@ -549,8 +561,169 @@ body{
 	@include font(20px, 25px, #fff, null);
 }
 
-.portfolio__button{
+/* ====== TEAM ====== */
 
+.team{
+	padding-top: 75px;
 }
+
+.team__subtext{
+	margin-bottom: 55px;
+}
+
+.team__wrapper{
+	margin-bottom: 100px;
+}
+
+.team__slider{
+	margin-bottom: 55px;
+}
+
+.team__slider-item-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.team__slider-info{
+	width: 38.8%;
+	padding-right: 40px;
+}
+
+.team__slider-person{
+	position: relative;
+	margin-bottom: 30px;
+
+	&::before{
+		content: "";
+		position: absolute;
+		right: -40px;
+		top: 0;
+		bottom: 0;
+
+		margin-top: auto;
+		margin-bottom: auto;
+
+		width: 4px;
+		height: 42px;
+
+		background-color: #19bd9a;
+	}
+}
+
+.team__slider-name{
+	margin-bottom: 5px;
+	@include font(20px, 20px, #464646, null);
+	text-align: right;
+}
+
+.team__slider-position{
+	@extend %SourceSansProLight;
+	text-transform: uppercase;
+	font-style: italic;
+	text-align: right;
+}
+
+.team__slider-description{
+	margin-bottom: 40px;
+
+	text-align: right;
+}
+
+.team__slider-achievement{
+	margin-left: auto;
+	width: 330px;
+
+	text-align: right;
+
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
+}
+
+.team__slider-heading{
+	display: flex;
+	justify-content: space-between;
+
+	@extend %SourceSansProLight;
+	@include font(16px, 25px, null, uppercase);
+}
+
+.team__slider-scale{
+	width: 330px;
+	height: 4px;
+
+	background-color: #e1e4e9;
+}
+
+.team__slider-bar{	
+	height: 4px;
+
+	background-color: #19bd9a;
+}
+
+.team__slider-bar--1{
+	width: 270px;
+}
+
+.team__slider-bar--2{
+	width: 200px;
+}
+
+.team__slider-bar--3{
+	width: 260px;	
+}
+
+/* slider nav */
+
+.team__slider-nav{
+	.slick-dots{
+		margin: 0 auto;
+		width: 50px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li{
+		font-size: 0px;
+		line-height: 0;
+		border: 0;
+		width: 10px;
+		height: 10px;
+
+		border: 1px solid #19bd9a;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&.slick-active{
+			background-color: #19bd9a;
+		}
+
+		button:-moz-focusring{
+			outline: none;
+		}
+	}
+}
+
+.team__bottom-block{
+	padding: 55px 0;
+
+	background-image: url("../img/team-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	text-align: center;
+}
+
+.team__bottom-text{
+	margin-bottom: 30px;
+
+	@include font(20px, 25px, #fff, null);
+}
+
+
+
 
 
