@@ -61,7 +61,7 @@
 			
 			<div class="about__wrapper">
 				<div class="about__left-block">
-					<h3 class="about__heading-left heading">This is Bouncy</h3>
+					<h3 class="about__heading--left heading">This is Bouncy</h3>
 					<p class="about__text">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
 					</p>
@@ -72,10 +72,9 @@
 				</div>
 			</div>
 
-			<div class="about__details">
-				<div class="container">
-					<h3 class="about__heading heading">Details about Bouncy</h3>
-					<p class="about__subtext">
+			<div class="about__details">				
+					<h3 class="heading">Details about Bouncy</h3>
+					<p class="about__subtext subtext">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 					</p>
 					<ul class="about__icons">
@@ -89,8 +88,8 @@
 							<img src="img/lamp.png" width="20" height="30" alt="Lamp icon">
 						</li>
 					</ul>
-
-					<h4 class="about__small-heading small-heading">Creative ideas</h4>
+				<div class="container">
+					<h4 class="small-heading">Creative ideas</h4>
 					<div class="about__wrapper-bottom">
 						<div class="about__left-column">
 							At <span class="green-text">vero</span> eos et accusamus et iusto odio dignissimos <span class="bold-text">ducimus</span> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
@@ -103,7 +102,7 @@
 			</div>
 
 			<div class="about__featured">
-				<h3 class="about__heading heading">Featured projects</h3>
+				<h3 class="heading">Featured projects</h3>
 				<p class="about__subtext subtext">
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 				</p>
@@ -132,18 +131,18 @@
 		<section class="services" id="services">
 			<h2 class="visually-hidden">Meet our services</h2>
 
+			<h3 class="heading">Our Services</h3>
+			<p class="services__subtext subtext">
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+			</p>
 			<div class="container">
-				<h3 class="services__heading heading">Our Services</h3>
-				<p class="services__subtext subtext">
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-				</p>
 				<div class="services__wrapper">
 					<div class="services__left-column">
 						<div class="services__icons">
 							<div class="services__icon">
 								<img src="img/service-icon1.png" width="28" height="28" alt="Service icon">
 							</div>
-							<div class="services__icon--green">
+							<div class="services__icon services__icon--green">
 								<img src="img/service-icon2.png" width="25" height="28" alt="Service icon">
 							</div>
 							<div class="services__icon">
@@ -153,8 +152,8 @@
 								<img src="img/service-icon4.png" width="25" height="26" alt="Service icon">
 							</div>
 						</div>
-						<div class="services__info">
-							<h4 class="about__small-heading small-heading">Graphic Design</h4>
+						<div>
+							<h4 class="small-heading">Graphic Design</h4>
 							<p class="services__info-text">
 								At vero eos et accusamus et iusto odio dignissimos <span class="bold-text">ducimus</span> qui blanditiis praesentium voluptatum deleniti
 							</p>
@@ -164,114 +163,140 @@
 						</div>
 					</div>
 					<div class="services__right-column">
-						<div class="services__statistic-item">
-							<div class="services__statistic-round">
-								80%
-							</div>
+						<div>
+							<svg width="120" height="120" viewbox="0 0 120 120">
+								<defs>
+									<circle id="circle" cx="60" cy="60" r="55" stroke-width="4" fill="transparent" />
+								</defs>
+								<use xlink:href="#circle" stroke="#2f8a8e" stroke-dasharray="70, 274" stroke-dashoffset="85" />
+								<use xlink:href="#circle" stroke="#19bd9a" stroke-dasharray="274, 70" stroke-dashoffset="15" />
+								<text y="70" x="35" font-size="25px" font-family="Open Sans Regular", sans-serif fill="#81868e">80%</text>
+							</svg>
 							<p class="services__subtitle">Branding</p>
 						</div>
-						<div class="services__statistic-item">
-							<div class="services__statistic-round">
-								75%
-							</div>
+						<div>
+							<svg width="120" height="120" viewbox="0 0 120 120">
+								<defs>
+									<circle id="circle" cx="60" cy="60" r="55" stroke-width="4" fill="transparent" />
+								</defs>
+								<use xlink:href="#circle" stroke="#2f8a8e" stroke-dasharray="80, 265" stroke-dashoffset="85" />
+								<use xlink:href="#circle" stroke="#19bd9a" stroke-dasharray="265, 80" stroke-dashoffset="5" />
+								<text y="70" x="35" font-size="25px" font-family="Open Sans Regular", sans-serif fill="#81868e">75%</text>
+							</svg>
 							<p class="services__subtitle">Web Design</p>
 						</div>
-						<div class="services__statistic-item">
-							<div class="services__statistic-round">
-								60%
-							</div>
+						<div>
+							<svg width="120" height="120" viewbox="0 0 120 120">
+								<defs>
+									<circle id="circle" cx="60" cy="60" r="55" stroke-width="4" fill="transparent" />
+								</defs>
+								<use xlink:href="#circle" stroke="#2f8a8e" stroke-dasharray="100, 245" stroke-dashoffset="85" />
+								<use xlink:href="#circle" stroke="#19bd9a" stroke-dasharray="245, 100" stroke-dashoffset="-15" />
+								<text y="70" x="35" font-size="25px" font-family="Open Sans Regular", sans-serif fill="#81868e">60%</text>
+							</svg>
 							<p class="services__subtitle">UX/UI</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-wide">
-				<div class="services__impressed">
-					<div class="services__impressed-info">
-						<h3 class="services__heading heading">Impressed?</h3>
-						<p class="services__impressed-text">
-							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
-						</p>
-						<p class="services__name">
-							- Abdullah Noman
-						</p>
-						<p class="services__position">
-							Creative Director, <span class="green-text">Code Cafe</span>
-						</p>
+			
+			<div class="services__impressed">
+				<div class="container-wide">
+					<div class="services__impressed-inner">
+						<div class="services__impressed-info">
+							<h3 class="services__heading heading">Impressed?</h3>
+							<p class="services__impressed-text">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
+							</p>
+							<p class="services__name">
+								- Abdullah Noman
+							</p>
+							<p class="services__position">
+								Creative Director, <span class="green-text">Code Cafe</span>
+							</p>
+						</div>
+						<figure class="services__mac">
+							<img src="img/mac.png" width="409" height="328" alt="Mac">
+						</figure>
 					</div>
-					<figure class="services__mac">
-						<img src="img/mac.png" width="409" height="238" alt="Mac">
-					</figure>
 				</div>
 			</div>
 		</section>
 
 		<section class="portfolio" id="portfolio">
-			<h3 class="services__heading heading">The portfolio</h3>
-			<p class="services__subtext subtext">
+			<h3 class="heading">The portfolio</h3>
+			<p class="subtext portfolio__subtext">
 				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			</p>
 
 			<ul class="portfolio__menu">
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">All works</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">Print</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">Identity</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">Branding</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">Web</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">HTML</a>
 				</li>
-				<li class="portfolio__menu-item">
+				<li>
 					<a href="#" class="portfolio__menu-link">Wordpress</a>
 				</li>
 			</ul>
 
 			<div class="portfolio__bricks">
-				<div class="portfolio__brick1">
-					<img src="img/portfolio-bg1.jpg" alt="">
+				<div class="portfolio__block">
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg1.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg2.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg3.jpg" alt="">
+					</div>					
 				</div>
-				<div class="portfolio__brick2">
-					<img src="img/portfolio-bg2.jpg" alt="">
+				<div class="portfolio__block">
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg4.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg5.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg6.jpg" alt="">
+					</div>
+				</div>			
+				<div class="portfolio__block">
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg7.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg8.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg9.jpg" alt="">
+					</div>
 				</div>
-				<div class="portfolio__brick3">
-					<img src="img/portfolio-bg3.jpg" alt="">
-				</div>
-				<div class="portfolio__brick4">
-					<img src="img/portfolio-bg4.jpg" alt="">
-				</div>
-				<div class="portfolio__brick5">
-					<img src="img/portfolio-bg5.jpg" alt="">
-				</div>
-				<div class="portfolio__brick6">
-					<img src="img/portfolio-bg6.jpg" alt="">
-				</div>
-				<div class="portfolio__brick7">
-					<img src="img/portfolio-bg7.jpg" alt="">
-				</div>
-				<div class="portfolio__brick8">
-					<img src="img/portfolio-bg8.jpg" alt="">
-				</div>
-				<div class="portfolio__brick9">
-					<img src="img/portfolio-bg9.jpg" alt="">
-				</div>
-				<div class="portfolio__brick10">
-					<img src="img/portfolio-bg10.jpg" alt="">
-				</div>
-				<div class="portfolio__brick11">
-					<img src="img/portfolio-bg11.jpg" alt="">
-				</div>
-				<div class="portfolio__brick12">
-					<img src="img/portfolio-bg12.jpg" alt="">
+				<div class="portfolio__block">
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg10.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg11.jpg" alt="">
+					</div>
+					<div class="portfolio__brick">
+						<img src="img/portfolio-bg12.jpg" alt="">
+					</div>
 				</div>
 			</div>
 
@@ -279,7 +304,7 @@
 				<p class="portfolio__bottom-text">
 					At vero eos et <span class="bold-text">accusamus</span> et iusto odio <span class="bold-text">dignissimos</span> ducimus qui blanditiis 
 				</p>
-				<button class="portfolio__button button">Smart Project</button>
+				<button class="portfolio__button button--white button">Smart Project</button>
 			</div>
 		</section>
 
